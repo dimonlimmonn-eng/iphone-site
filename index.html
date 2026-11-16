@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -23,8 +22,7 @@ html {
 body {
   background: #080809;
   color: #f5f5f7;
-  font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   overflow-x: hidden;
 }
 
@@ -34,13 +32,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(
-    110deg,
-    #fff 10%,
-    #aaa 45%,
-    #777 75%,
-    #fff 100%
-  );
+  background: linear-gradient(110deg, #fff 10%, #aaa 45%, #777 75%, #fff 100%);
   background-size: 200% auto;
   color: transparent;
   background-clip: text;
@@ -62,11 +54,7 @@ body {
   position: absolute;
   width: 550px;
   height: 550px;
-  background: radial-gradient(
-    circle,
-    rgba(125,85,150,.18),
-    transparent 70%
-  );
+  background: radial-gradient(circle, rgba(125,85,150,.18), transparent 70%);
   filter: blur(35px);
   mix-blend-mode: screen;
   pointer-events: none;
@@ -90,7 +78,7 @@ body {
   position: absolute;
   z-index: 0;
   left: 50%;
-  top: 78%;
+  top: 80%;
   width: 190px;
   height: 38px;
   transform: translateX(-50%);
@@ -202,7 +190,7 @@ nav a:hover {
   }
 
   .phone-shadow {
-    top: 78%;
+    top: 80%;
     width: 155px;
     height: 30px;
   }
@@ -282,85 +270,55 @@ nav a:hover {
 @media (prefers-reduced-motion: reduce) {
   .modal-overlay, .modal-panel { transition: none; }
 }
-
 </style>
 </head>
 
 <body>
 
 <!-- NAVIGATION -->
-<nav class="fixed top-0 left-0 w-full z-50 glass"
-     style="background:rgba(8,8,9,.75)">
-  <div class="max-w-7xl mx-auto px-6 h-16 flex
-              items-center justify-between">
-
+<nav class="fixed top-0 left-0 w-full z-50 glass" style="background:rgba(8,8,9,.75)">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
     <a href="#" class="font-semibold text-lg tracking-tight">
       iPhone 18 <span class="text-gray-400">Pro Max</span>
     </a>
-
     <div class="hidden md:flex gap-9 text-sm text-gray-400">
       <a href="#features">Возможности</a>
       <a href="#design">Дизайн</a>
       <a href="#order">Предзаказ</a>
     </div>
-
-    <a href="#order"
-       class="bg-white text-black rounded-full px-5 py-2
-              text-sm font-semibold hover:bg-gray-200 transition">
+    <a href="#order" class="bg-white text-black rounded-full px-5 py-2 text-sm font-semibold hover:bg-gray-200 transition">
       Купить
     </a>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="relative min-h-screen flex items-center
-                pt-24 overflow-hidden">
-
-  <div class="hero-glow"
-       style="top:15%;left:25%"></div>
-
-  <div class="max-w-7xl mx-auto px-6 w-full grid
-              md:grid-cols-2 gap-8 items-center">
-
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+  <div class="hero-glow" style="top:15%;left:25%"></div>
+  <div class="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-8 items-center">
     <div class="relative z-10 reveal">
-
       <div class="flex items-center gap-2 mb-7">
-        <span class="w-2 h-2 bg-purple-400 rounded-full
-                     shadow-lg shadow-purple-400"></span>
-        <span class="text-xs tracking-[.25em] text-gray-400
-                     uppercase">
-          The next generation
-        </span>
+        <span class="w-2 h-2 bg-purple-400 rounded-full shadow-lg shadow-purple-400"></span>
+        <span class="text-xs tracking-[.25em] text-gray-400 uppercase">The next generation</span>
       </div>
-
-      <h1 class="text-5xl md:text-7xl lg:text-8xl
-                 font-semibold tracking-[-.065em]
-                 leading-[.98] mb-8">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-[-.065em] leading-[.98] mb-8">
         iPhone 18
         <span class="gradient-text block">Pro Max.</span>
       </h1>
-
-      <p class="text-2xl md:text-3xl text-gray-300
-                font-light tracking-tight mb-4">
+      <p class="text-2xl md:text-3xl text-gray-300 font-light tracking-tight mb-4">
         Грани совершенства.
       </p>
-
-      <p class="text-gray-500 text-base md:text-lg
-                max-w-md leading-relaxed mb-10">
-        Технологии будущего. Безупречный дизайн.
-        Мощность, которая меняет представление о возможном.
+      <p class="text-gray-500 text-base md:text-lg max-w-md leading-relaxed mb-10">
+        Технологии будущего. Безупречный дизайн. Мощность, которая меняет представление о возможном.
       </p>
-
       <div class="flex flex-wrap gap-4">
         <a href="#features" class="primary-button">
           Узнать больше <span>↗</span>
         </a>
-
         <a href="#design" class="secondary-button">
           Исследовать дизайн
         </a>
       </div>
-
       <div class="flex gap-10 mt-14">
         <div>
           <p class="text-2xl font-semibold">A20</p>
@@ -380,283 +338,105 @@ nav a:hover {
     <!-- 3D MODEL -->
     <div id="design" class="relative z-10">
       <div class="relative w-full h-[480px] md:h-[650px]">
-
-        <div class="absolute inset-0 rounded-full
-                    blur-3xl opacity-20"
-             style="background:radial-gradient(
-             circle, #9b75bf, transparent 65%)">
-        </div>
-
+        <div class="absolute inset-0 rounded-full blur-3xl opacity-20" style="background:radial-gradient(circle, #9b75bf, transparent 65%)"></div>
         <canvas id="phoneCanvas"></canvas>
         <div class="phone-shadow" aria-hidden="true"></div>
-
-        <div class="absolute bottom-2 left-1/2
-                    -translate-x-1/2 flex flex-col
-                    items-center gap-5 w-full">
-
-          <p id="colorName"
-             class="text-xs tracking-[.25em] uppercase
-                    text-gray-400">
-            Burgundy
-          </p>
-
-          <div class="flex items-center gap-5 glass
-                      rounded-full px-6 py-4">
-
-            <button class="color-option active"
-                    data-color="burgundy"
-                    data-name="Burgundy"
-                    style="background:#702e42"
-                    aria-label="Burgundy"></button>
-
-            <button class="color-option"
-                    data-color="glacier"
-                    data-name="Glacier"
-                    style="background:#a9c7d8"
-                    aria-label="Glacier"></button>
-
-            <button class="color-option"
-                    data-color="silver"
-                    data-name="Silver"
-                    style="background:#bfc1c6"
-                    aria-label="Silver"></button>
-
-            <button class="color-option"
-                    data-color="black"
-                    data-name="Black"
-                    style="background:#292a2d"
-                    aria-label="Black"></button>
-
+        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-col items-center gap-5 w-full">
+          <p id="colorName" class="text-xs tracking-[.25em] uppercase text-gray-400">Burgundy</p>
+          <div class="flex items-center gap-5 glass rounded-full px-6 py-4">
+            <button class="color-option active" data-color="burgundy" data-name="Burgundy" style="background:#702e42" aria-label="Burgundy"></button>
+            <button class="color-option" data-color="glacier" data-name="Glacier" style="background:#a9c7d8" aria-label="Glacier"></button>
+            <button class="color-option" data-color="silver" data-name="Silver" style="background:#bfc1c6" aria-label="Silver"></button>
+            <button class="color-option" data-color="black" data-name="Black" style="background:#292a2d" aria-label="Black"></button>
           </div>
-
-          <p class="text-xs text-gray-600">
-            Выберите свой цвет
-          </p>
+          <p class="text-xs text-gray-600">Выберите свой цвет</p>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- FEATURES -->
 <section id="features" class="py-32 px-6">
-
   <div class="max-w-7xl mx-auto">
-
     <div class="max-w-2xl mb-16 reveal">
-      <p class="text-xs tracking-[.25em] uppercase
-                text-gray-500 mb-5">
-        Beyond imagination
-      </p>
-
-      <h2 class="text-4xl md:text-6xl font-semibold
-                 tracking-tight leading-tight">
-        Больше, чем
-        <span class="gradient-text">технологии.</span>
+      <p class="text-xs tracking-[.25em] uppercase text-gray-500 mb-5">Beyond imagination</p>
+      <h2 class="text-4xl md:text-6xl font-semibold tracking-tight leading-tight">
+        Больше, чем <span class="gradient-text">технологии.</span>
       </h2>
-
-      <p class="text-gray-500 mt-6 text-lg">
-        Каждая деталь создана для нового уровня
-        взаимодействия с миром.
-      </p>
+      <p class="text-gray-500 mt-6 text-lg">Каждая деталь создана для нового уровня взаимодействия с миром.</p>
     </div>
-
     <div class="grid md:grid-cols-2 gap-5">
-
-      <!-- CHIP -->
-      <div class="feature-card glass rounded-[30px]
-                  p-8 md:p-11 min-h-[340px] reveal"
-           style="--glow:rgba(115,90,210,.2)">
-
+      <div class="feature-card glass rounded-[30px] p-8 md:p-11 min-h-[340px] reveal" style="--glow:rgba(115,90,210,.2)">
         <div class="feature-icon">◈</div>
-
-        <p class="text-xs tracking-[.2em] uppercase
-                  text-gray-500 mb-4">
-          Performance
-        </p>
-
-        <h3 class="text-3xl md:text-4xl font-semibold
-                   tracking-tight mb-4">
-          Чип A20 Pro.
-        </h3>
-
-        <p class="text-gray-400 leading-relaxed max-w-sm">
-          2-нанометровая архитектура. Запредельная
-          скорость, интеллектуальные вычисления
-          и графика нового поколения.
-        </p>
-
-        <div class="mt-9 text-sm text-purple-300">
-          Новая эра производительности ↗
-        </div>
+        <p class="text-xs tracking-[.2em] uppercase text-gray-500 mb-4">Performance</p>
+        <h3 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4">Чип A20 Pro.</h3>
+        <p class="text-gray-400 leading-relaxed max-w-sm">2-нанометровая архитектура. Запредельная скорость, интеллектуальные вычисления и графика нового поколения.</p>
+        <div class="mt-9 text-sm text-purple-300">Новая эра производительности ↗</div>
       </div>
-
-      <!-- CAMERA -->
-      <div class="feature-card glass rounded-[30px]
-                  p-8 md:p-11 min-h-[340px] reveal"
-           style="--glow:rgba(180,100,80,.17)">
-
+      <div class="feature-card glass rounded-[30px] p-8 md:p-11 min-h-[340px] reveal" style="--glow:rgba(180,100,80,.17)">
         <div class="feature-icon">◎</div>
-
-        <p class="text-xs tracking-[.2em] uppercase
-                  text-gray-500 mb-4">
-          Photography
-        </p>
-
-        <h3 class="text-3xl md:text-4xl font-semibold
-                   tracking-tight mb-4">
-          Камера 48 МП.
-        </h3>
-
-        <p class="text-gray-400 leading-relaxed max-w-sm">
-          Переменная диафрагма. Студийный свет,
-          естественное боке и полный контроль
-          над глубиной резкости.
-        </p>
-
-        <div class="mt-9 text-sm text-orange-200">
-          Искусство в каждом кадре ↗
-        </div>
+        <p class="text-xs tracking-[.2em] uppercase text-gray-500 mb-4">Photography</p>
+        <h3 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4">Камера 48 МП.</h3>
+        <p class="text-gray-400 leading-relaxed max-w-sm">Переменная диафрагма. Студийный свет, естественное боке и полный контроль над глубиной резкости.</p>
+        <div class="mt-9 text-sm text-orange-200">Искусство в каждом кадре ↗</div>
       </div>
-
-      <!-- DISPLAY -->
-      <div class="feature-card glass rounded-[30px]
-                  p-8 md:p-11 min-h-[340px] reveal"
-           style="--glow:rgba(70,140,220,.2)">
-
+      <div class="feature-card glass rounded-[30px] p-8 md:p-11 min-h-[340px] reveal" style="--glow:rgba(70,140,220,.2)">
         <div class="feature-icon">▣</div>
-
-        <p class="text-xs tracking-[.2em] uppercase
-                  text-gray-500 mb-4">
-          Display
-        </p>
-
-        <h3 class="text-3xl md:text-4xl font-semibold
-                   tracking-tight mb-4">
-          6,9" Super Retina.
-        </h3>
-
-        <p class="text-gray-400 leading-relaxed max-w-sm">
-          Super Retina XDR. Ультратонкие рамки,
-          ProMotion 120 Гц и компактный
-          Dynamic Island.
-        </p>
-
-        <div class="mt-9 text-sm text-blue-300">
-          Погружение без границ ↗
-        </div>
+        <p class="text-xs tracking-[.2em] uppercase text-gray-500 mb-4">Display</p>
+        <h3 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4">6,9" Super Retina.</h3>
+        <p class="text-gray-400 leading-relaxed max-w-sm">Super Retina XDR. Ультратонкие рамки, ProMotion 120 Гц и компактный Dynamic Island.</p>
+        <div class="mt-9 text-sm text-blue-300">Погружение без границ ↗</div>
       </div>
-
-      <!-- BATTERY -->
-      <div class="feature-card glass rounded-[30px]
-                  p-8 md:p-11 min-h-[340px] reveal"
-           style="--glow:rgba(70,190,130,.16)">
-
+      <div class="feature-card glass rounded-[30px] p-8 md:p-11 min-h-[340px] reveal" style="--glow:rgba(70,190,130,.16)">
         <div class="feature-icon">ϟ</div>
-
-        <p class="text-xs tracking-[.2em] uppercase
-                  text-gray-500 mb-4">
-          Battery
-        </p>
-
-        <h3 class="text-3xl md:text-4xl font-semibold
-                   tracking-tight mb-4">
-          Энергия без границ.
-        </h3>
-
-        <p class="text-gray-400 leading-relaxed max-w-sm">
-          До 43 часов воспроизведения видео
-          и быстрая зарядка мощностью 60 Вт.
-          Больше времени для важного.
-        </p>
-
-        <div class="mt-9 text-sm text-green-300">
-          Создан для долгого дня ↗
-        </div>
+        <p class="text-xs tracking-[.2em] uppercase text-gray-500 mb-4">Battery</p>
+        <h3 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4">Энергия без границ.</h3>
+        <p class="text-gray-400 leading-relaxed max-w-sm">До 43 часов воспроизведения видео и быстрая зарядка мощностью 60 Вт. Больше времени для важного.</p>
+        <div class="mt-9 text-sm text-green-300">Создан для долгого дня ↗</div>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- FINAL CTA -->
-<section id="order" class="relative py-36 px-6
-                         overflow-hidden text-center">
-
-  <div class="absolute inset-0 pointer-events-none"
-       style="background:radial-gradient(
-       ellipse at center,rgba(125,80,160,.15),
-       transparent 65%)">
-  </div>
-
+<section id="order" class="relative py-36 px-6 overflow-hidden text-center">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse at center,rgba(125,80,160,.15),transparent 65%)"></div>
   <div class="relative max-w-4xl mx-auto reveal">
-
-    <p class="text-xs tracking-[.3em] uppercase
-              text-gray-500 mb-8">
-      The future is here
-    </p>
-
-    <h2 class="text-5xl md:text-7xl lg:text-8xl
-               font-semibold tracking-[-.06em]
-               leading-tight mb-8">
-      Будущее.
-      <span class="gradient-text block">
-        В твоих руках.
-      </span>
+    <p class="text-xs tracking-[.3em] uppercase text-gray-500 mb-8">The future is here</p>
+    <h2 class="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-[-.06em] leading-tight mb-8">
+      Будущее. <span class="gradient-text block">В твоих руках.</span>
     </h2>
-
-    <p class="text-gray-400 text-lg max-w-xl
-              mx-auto mb-12 leading-relaxed">
-      iPhone 18 Pro Max.
-      Новая глава мобильных технологий начинается здесь.
+    <p class="text-gray-400 text-lg max-w-xl mx-auto mb-12 leading-relaxed">
+      iPhone 18 Pro Max. Новая глава мобильных технологий начинается здесь.
     </p>
-
-    <button type="button" id="openOrderModal"
-            class="primary-button text-base">
+    <button type="button" id="openOrderModal" class="primary-button text-base">
       Предзаказ <span>↗</span>
     </button>
-
   </div>
 </section>
 
 <!-- PREORDER MODAL -->
 <div id="orderModal" class="modal-overlay" aria-hidden="true">
-  <div class="modal-panel glass" role="dialog" aria-modal="true"
-       aria-labelledby="orderModalTitle">
-    <button type="button" id="closeOrderModal" class="modal-close"
-            aria-label="Закрыть окно">×</button>
-
+  <div class="modal-panel glass" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
+    <button type="button" id="closeOrderModal" class="modal-close" aria-label="Закрыть окно">×</button>
     <div id="orderFormContent">
-      <p class="text-xs tracking-[.25em] uppercase text-gray-500 mb-4">
-        iPhone 18 Pro Max
-      </p>
-      <h2 id="orderModalTitle" class="text-3xl font-semibold tracking-tight mb-3">
-        Оформить предзаказ
-      </h2>
-      <p class="text-sm text-gray-400 mb-7">
-        Оставьте контакты — мы свяжемся с вами.
-      </p>
-
+      <p class="text-xs tracking-[.25em] uppercase text-gray-500 mb-4">iPhone 18 Pro Max</p>
+      <h2 id="orderModalTitle" class="text-3xl font-semibold tracking-tight mb-3">Оформить предзаказ</h2>
+      <p class="text-sm text-gray-400 mb-7">Оставьте контакты — мы свяжемся с вами.</p>
       <form id="orderForm" class="flex flex-col gap-4">
         <label class="text-sm text-gray-300">
           Имя
-          <input class="modal-field mt-2" type="text" name="name"
-                 placeholder="Ваше имя" autocomplete="name" required>
+          <input class="modal-field mt-2" type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
         </label>
         <label class="text-sm text-gray-300">
           Email
-          <input class="modal-field mt-2" type="email" name="email"
-                 placeholder="you@example.com" autocomplete="email" required>
+          <input class="modal-field mt-2" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
         </label>
-        <button type="submit" class="primary-button modal-submit mt-2">
-          Отправить
-        </button>
+        <button type="submit" class="primary-button modal-submit mt-2">Отправить</button>
       </form>
     </div>
-
-    <div id="orderSuccess" class="hidden py-8 text-center" role="status"
-         aria-live="polite">
+    <div id="orderSuccess" class="hidden py-8 text-center" role="status" aria-live="polite">
       <div class="text-4xl mb-5">✓</div>
       <h2 class="text-2xl font-semibold mb-3">Спасибо!</h2>
       <p class="text-gray-400">Мы свяжемся с вами</p>
@@ -666,129 +446,73 @@ nav a:hover {
 
 <!-- FOOTER -->
 <footer class="border-t border-white/10 py-8 px-6">
-  <div class="max-w-7xl mx-auto flex flex-col
-              md:flex-row justify-between items-center
-              gap-4">
-
-    <p class="text-sm text-gray-500">
-      iPhone 18 Pro Max — Concept Design © 2026
-    </p>
-
-    <p class="text-xs text-gray-600">
-      Концептуальный дизайн. Неофициальный проект.
-    </p>
-
-    <a href="#" class="text-sm text-gray-400
-                       hover:text-white transition">
-      Наверх ↑
-    </a>
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-sm text-gray-500">iPhone 18 Pro Max — Concept Design © 2026</p>
+    <p class="text-xs text-gray-600">Концептуальный дизайн. Неофициальный проект.</p>
+    <a href="#" class="text-sm text-gray-400 hover:text-white transition">Наверх ↑</a>
   </div>
 </footer>
 
-
 <!-- THREE.JS -->
 <script type="module">
-
-import * as THREE from
-'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
 
 const canvas = document.querySelector('#phoneCanvas');
-
 const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
 
-const camera = new THREE.PerspectiveCamera(
-  35,
-  1,
-  0.1,
-  100
-);
+// ИСПРАВЛЕНИЕ: Отодвигаем камеру, чтобы телефон влезал целиком
+camera.position.set(0, 0, 8);
 
-camera.position.set(0, 0, 9);
-
-const renderer = new THREE.WebGLRenderer({
-  canvas,
-  alpha: true,
-  antialias: true
-});
-
-renderer.setPixelRatio(
-  Math.min(window.devicePixelRatio, 1.7)
-);
-
+const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.7));
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.25;
+renderer.toneMappingExposure = 1.2;
 
-// LIGHTING
-
-scene.add(new THREE.AmbientLight(0xffffff, 1.8));
-
-const keyLight = new THREE.DirectionalLight(
-  0xffffff, 3.5
-);
+// Свет
+scene.add(new THREE.AmbientLight(0xffffff, 1.5));
+const keyLight = new THREE.DirectionalLight(0xffffff, 3.0);
 keyLight.position.set(4, 5, 7);
 scene.add(keyLight);
-
-const rimLight = new THREE.PointLight(
-  0x9d7aff, 35, 20
-);
+const rimLight = new THREE.PointLight(0x9d7aff, 25, 20);
 rimLight.position.set(-4, 1, -3);
 scene.add(rimLight);
-
-const sideLight = new THREE.PointLight(
-  0x80baff, 20, 15
-);
+const sideLight = new THREE.PointLight(0x80baff, 15, 15);
 sideLight.position.set(4, -3, 4);
 scene.add(sideLight);
-
-
-// PHONE GROUP
 
 const phone = new THREE.Group();
 scene.add(phone);
 
-
-// ROUNDED RECTANGLE GEOMETRY
-
 function roundedShape(w, h, r) {
   const s = new THREE.Shape();
-
   s.moveTo(-w/2 + r, -h/2);
   s.lineTo(w/2 - r, -h/2);
   s.quadraticCurveTo(w/2, -h/2, w/2, -h/2+r);
-
   s.lineTo(w/2, h/2-r);
   s.quadraticCurveTo(w/2, h/2, w/2-r, h/2);
-
   s.lineTo(-w/2+r, h/2);
   s.quadraticCurveTo(-w/2, h/2, -w/2, h/2-r);
-
   s.lineTo(-w/2, -h/2+r);
   s.quadraticCurveTo(-w/2, -h/2, -w/2+r, -h/2);
-
   return s;
 }
 
 function makeRoundedBox(w, h, depth, radius, material) {
   const shape = roundedShape(w, h, radius);
-
   const geometry = new THREE.ExtrudeGeometry(shape, {
     depth: depth,
     bevelEnabled: true,
-    bevelSegments: 2,
+    bevelSegments: 2, // ИСПРАВЛЕНИЕ: Снизили нагрузку на мобилки
     steps: 1,
     bevelSize: 0.045,
     bevelThickness: 0.045,
     curveSegments: 12
   });
-
   geometry.center();
-
   return new THREE.Mesh(geometry, material);
 }
-
-
-// MATERIALS
 
 const colorMaterials = {
   burgundy: 0x702e42,
@@ -813,37 +537,25 @@ const glassMaterial = new THREE.MeshPhysicalMaterial({
   clearcoatRoughness: 0.04
 });
 
-
-// BODY
-
-const body = makeRoundedBox(
-  2.15, 4.35, 0.22, 0.32, bodyMaterial
-);
-
+// Корпус
+const body = makeRoundedBox(2.15, 4.35, 0.22, 0.32, bodyMaterial);
 phone.add(body);
 
-
-// SCREEN TEXTURE
-
+// Текстура экрана
 const screenCanvas = document.createElement('canvas');
 screenCanvas.width = 512;
 screenCanvas.height = 1024;
-
 const ctx = screenCanvas.getContext('2d');
 
-const gradient = ctx.createLinearGradient(
-  0, 0, 512, 1024
-);
-
+const gradient = ctx.createLinearGradient(0, 0, 512, 1024);
 gradient.addColorStop(0, '#1c1430');
 gradient.addColorStop(.35, '#51406e');
 gradient.addColorStop(.65, '#171d34');
 gradient.addColorStop(1, '#07080e');
-
 ctx.fillStyle = gradient;
 ctx.fillRect(0, 0, 512, 1024);
 
-// Диагональный блик стекла
+// ИСПРАВЛЕНИЕ: Блик стекла
 const glassShine = ctx.createLinearGradient(40, 0, 420, 1024);
 glassShine.addColorStop(0, 'rgba(255,255,255,0)');
 glassShine.addColorStop(.42, 'rgba(255,255,255,0.08)');
@@ -852,195 +564,94 @@ glassShine.addColorStop(1, 'rgba(255,255,255,0)');
 ctx.fillStyle = glassShine;
 ctx.fillRect(0, 0, 512, 1024);
 
-const glow = ctx.createRadialGradient(
-  250, 390, 10, 250, 390, 400
-);
-
+const glow = ctx.createRadialGradient(250, 390, 10, 250, 390, 400);
 glow.addColorStop(0, 'rgba(190,140,230,.65)');
 glow.addColorStop(1, 'rgba(20,20,50,0)');
-
 ctx.fillStyle = glow;
 ctx.fillRect(0, 0, 512, 1024);
 
 const screenTexture = new THREE.CanvasTexture(screenCanvas);
 screenTexture.colorSpace = THREE.SRGBColorSpace;
 
-
-// SCREEN
-
-const screen = makeRoundedBox(
-  1.99, 4.17, 0.025, 0.27, glassMaterial
-);
-
+// Экран
+const screen = makeRoundedBox(1.99, 4.17, 0.025, 0.27, glassMaterial);
 screen.position.z = 0.125;
 phone.add(screen);
 
-
-// SCREEN IMAGE
-
 const screenImage = new THREE.Mesh(
-  new THREE.ShapeGeometry(
-    roundedShape(1.93, 4.08, 0.25)
-  ),
-  new THREE.MeshBasicMaterial({
-    map: screenTexture,
-    transparent: true
-  })
+  new THREE.ShapeGeometry(roundedShape(1.93, 4.08, 0.25)),
+  new THREE.MeshBasicMaterial({ map: screenTexture, transparent: true })
 );
-
 screenImage.position.z = 0.155;
 phone.add(screenImage);
 
-
-// DYNAMIC ISLAND
-
+// Dynamic Island
 const island = new THREE.Mesh(
-  new THREE.ShapeGeometry(
-    roundedShape(0.62, 0.16, 0.08)
-  ),
-  new THREE.MeshBasicMaterial({
-    color: 0x000000
-  })
+  new THREE.ShapeGeometry(roundedShape(0.62, 0.16, 0.08)),
+  new THREE.MeshBasicMaterial({ color: 0x000000 })
 );
-
 island.position.set(0, 1.92, 0.17);
 phone.add(island);
 
-
-// CAMERA MODULE ON BACK
-
-const cameraPlate = makeRoundedBox(
-  0.93, 1.04, 0.075, 0.17,
-  new THREE.MeshPhysicalMaterial({
-    color: 0x202024,
-    metalness: 0.7,
-    roughness: 0.22
-  })
-);
-
+// Блок камер
+const cameraPlate = makeRoundedBox(0.93, 1.04, 0.075, 0.17, new THREE.MeshPhysicalMaterial({ color: 0x202024, metalness: 0.7, roughness: 0.22 }));
 cameraPlate.position.set(-0.49, 1.42, -0.16);
 phone.add(cameraPlate);
 
-
-// THREE CAMERA LENSES
-
+// ИСПРАВЛЕНИЕ: Линзы камер
 function createLens(x, y) {
-
-  const outer = new THREE.Mesh(
-    new THREE.CylinderGeometry(.19, .19, .055, 40),
-    new THREE.MeshPhysicalMaterial({
-      color: 0x09090b,
-      metalness: .8,
-      roughness: .16
-    })
-  );
-
+  const outer = new THREE.Mesh(new THREE.CylinderGeometry(.19, .19, .055, 40), new THREE.MeshPhysicalMaterial({ color: 0x09090b, metalness: .8, roughness: .16 }));
   outer.rotation.x = Math.PI / 2;
   outer.position.set(x, y, -0.225);
   phone.add(outer);
 
-  const lens = new THREE.Mesh(
-    new THREE.CircleGeometry(.145, 40),
-    new THREE.MeshPhysicalMaterial({
-      color: 0x263a60,
-      metalness: .65,
-      roughness: .12,
-      clearcoat: 1
-    })
-  );
-
+  const lens = new THREE.Mesh(new THREE.CircleGeometry(.145, 40), new THREE.MeshPhysicalMaterial({ color: 0x263a60, metalness: .65, roughness: .12, clearcoat: 1 }));
   lens.position.set(x, y, -0.258);
-  phone.add(lens);
+  phone.add(lens); // Фикс бага
 
-  const reflection = new THREE.Mesh(
-    new THREE.CircleGeometry(.045, 24),
-    new THREE.MeshBasicMaterial({
-      color: 0x8ba7d5
-    })
-  );
-
+  const reflection = new THREE.Mesh(new THREE.CircleGeometry(.045, 24), new THREE.MeshBasicMaterial({ color: 0x8ba7d5 }));
   reflection.position.set(x-.045, y+.045, -0.265);
   phone.add(reflection);
 }
-
 createLens(-0.68, 1.75);
 createLens(-0.30, 1.75);
 createLens(-0.68, 1.33);
 
-
-// FLASH
-
-const flash = new THREE.Mesh(
-  new THREE.CircleGeometry(.07, 24),
-  new THREE.MeshBasicMaterial({ color: 0xfff4db })
-);
-
+// Вспышка
+const flash = new THREE.Mesh(new THREE.CircleGeometry(.07, 24), new THREE.MeshBasicMaterial({ color: 0xfff4db }));
 flash.position.set(-0.29, 1.35, -0.23);
 phone.add(flash);
 
-
-// SIDE BUTTONS
-
-const buttonMaterial = new THREE.MeshStandardMaterial({
-  color: 0x888888,
-  metalness: .9,
-  roughness: .25
-});
-
+// Кнопки
+const buttonMaterial = new THREE.MeshStandardMaterial({ color: 0x888888, metalness: .9, roughness: .25 });
 function sideButton(x, y, depth) {
-  const mesh = new THREE.Mesh(
-    new THREE.BoxGeometry(.07, depth, .11),
-    buttonMaterial
-  );
-
+  const mesh = new THREE.Mesh(new THREE.BoxGeometry(.07, depth, .11), buttonMaterial);
   mesh.position.set(x, y, 0);
   phone.add(mesh);
 }
-
 sideButton(-1.11, 1.1, .38);
 sideButton(-1.11, .48, .27);
 sideButton(1.11, .75, .65);
 
-
-// PHONE POSITION
-
 phone.rotation.x = -0.08;
 phone.rotation.y = -0.25;
 
-
-// COLOR SWITCHER
-
+// Переключатель цветов
 document.querySelectorAll('.color-option').forEach(button => {
-
   button.addEventListener('click', () => {
-
     const selected = button.dataset.color;
-
-    bodyMaterial.color.setHex(
-      colorMaterials[selected]
-    );
-
-    document.querySelectorAll('.color-option')
-      .forEach(el => el.classList.remove('active'));
-
+    bodyMaterial.color.setHex(colorMaterials[selected]);
+    document.querySelectorAll('.color-option').forEach(el => el.classList.remove('active'));
     button.classList.add('active');
-
-    document.querySelector('#colorName').textContent =
-      button.dataset.name;
-
+    document.querySelector('#colorName').textContent = button.dataset.name;
   });
-
 });
 
-
-// MOUSE / TOUCH ROTATION
-
+// Вращение мышкой
 let targetX = -0.08;
 let targetY = -0.25;
-
 let currentX = targetX;
 let currentY = targetY;
-
 let dragging = false;
 let previousX = 0;
 let previousY = 0;
@@ -1053,109 +664,62 @@ canvas.addEventListener('pointerdown', e => {
 });
 
 canvas.addEventListener('pointermove', e => {
-
   if (!dragging) return;
-
   const dx = e.clientX - previousX;
   const dy = e.clientY - previousY;
-
   targetY += dx * 0.008;
   targetX += dy * 0.006;
-
   targetX = THREE.MathUtils.clamp(targetX, -0.8, 0.8);
-
   previousX = e.clientX;
   previousY = e.clientY;
 });
 
-function stopDragging() {
-  dragging = false;
-}
-
+function stopDragging() { dragging = false; }
 canvas.addEventListener('pointerup', stopDragging);
 canvas.addEventListener('pointercancel', stopDragging);
 canvas.addEventListener('lostpointercapture', stopDragging);
 
-
-// RESPONSIVE
-
+// ИСПРАВЛЕНИЕ: Ресайз
 function resize() {
-
   const width = canvas.clientWidth;
   const height = canvas.clientHeight;
-
   if (!width || !height) return;
-
   camera.aspect = width / height;
-  camera.position.z = width < 500 ? 10.5 : 9;
+  camera.position.z = width < 500 ? 9.5 : 8; // Фикс зума
   camera.updateProjectionMatrix();
-
   renderer.setSize(width, height, false);
 }
-
 const resizeObserver = new ResizeObserver(resize);
 resizeObserver.observe(canvas);
 resize();
 
-
-// ANIMATION
-
+// Анимация
 let time = 0;
-
 function animate() {
-
   requestAnimationFrame(animate);
-
   time += 0.008;
-
-  if (!dragging) {
-    targetY += 0.002;
-  }
-
+  if (!dragging) { targetY += 0.002; }
   currentX += (targetX - currentX) * 0.045;
   currentY += (targetY - currentY) * 0.045;
-
   phone.rotation.x = currentX;
   phone.rotation.y = currentY;
-
   phone.position.y = Math.sin(time) * 0.055;
-
   renderer.render(scene, camera);
 }
-
 animate();
 
-
-// REVEAL ON SCROLL
-
+// Появление при скролле
 const observer = new IntersectionObserver(entries => {
-
   entries.forEach(entry => {
-
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     }
-
   });
-
-}, {
-  threshold: 0.12
-});
-
+}, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(element => {
   observer.observe(element);
 });
-
-
-// CLEANUP WHEN PAGE IS HIDDEN
-
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) {
-    // Animation continues with lightweight rendering.
-  }
-});
-
 
 // PREORDER MODAL
 const orderModal = document.querySelector('#orderModal');
@@ -1196,8 +760,6 @@ orderForm.addEventListener('submit', event => {
   orderFormContent.classList.add('hidden');
   orderSuccess.classList.remove('hidden');
 });
-
 </script>
-
 </body>
 </html>
